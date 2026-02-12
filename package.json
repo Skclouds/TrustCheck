@@ -1,0 +1,17 @@
+{
+  "name": "trustcheck-fullstack",
+  "version": "1.0.0",
+  "description": "TrustCheck - Full Stack Application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client/trustcheck && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client/trustcheck && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
